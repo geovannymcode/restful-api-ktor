@@ -7,5 +7,5 @@
   <a href="#"><img src="https://img.shields.io/badge/DI-Koin-green" alt="Koin"></a>
 </p>
 
-# restful-api-ktor
+# Restful-API-Ktor
 Building a RESTful API with Ktor
