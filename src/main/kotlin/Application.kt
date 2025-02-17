@@ -1,5 +1,6 @@
 package com.geovannycode
 
+import com.geovannycode.datasource.configureDatabases
 import io.ktor.server.application.*
 
 fun main(args: Array<String>) {
@@ -7,7 +8,6 @@ fun main(args: Array<String>) {
 }
 
 fun Application.module() {
-    configureFrameworks()
     configureSerialization()
     configureDatabases()
     configureRouting()
