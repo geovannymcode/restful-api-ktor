@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Speaker(
-    var id: Int? = null,
+    val id: Int? = null,
     val name: String,
     val country: String,
     val biography: String,

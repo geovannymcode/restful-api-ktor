@@ -12,7 +12,9 @@ class SpeakerRepository {
     }
 
     fun getById(id: Int): Speaker? = transaction {
-        SpeakerEntity.selectAll().where { SpeakerEntity.id eq id }
+        SpeakerEntity
+            .selectAll()
+            .where { SpeakerEntity.id eq id }
             .mapNotNull { toSpeaker(it) }
             .singleOrNull()
     }
