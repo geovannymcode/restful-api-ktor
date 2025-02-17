@@ -14,7 +14,7 @@ class SpeakerRepository {
     fun getById(id: Int): Speaker? = transaction {
         SpeakerEntity
             .selectAll()
-            .where { SpeakerEntity.id eq id }
+            .andWhere { SpeakerEntity.id eq id }
             .mapNotNull { toSpeaker(it) }
             .singleOrNull()
     }
